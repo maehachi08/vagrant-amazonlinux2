@@ -1,0 +1,6 @@
+docker ansible_connection=local
+docker01.maepachi.local ansible_ssh_host=172.16.100.10 ansible_ssh_private_key_file=./.vagrant/machines/docker01/virtualbox/private_key
+
+[docker]
+docker01.maepachi.local
+

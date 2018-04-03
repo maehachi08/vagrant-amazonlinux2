@@ -1,0 +1,17 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: yum update
+      yum:
+        name: '*'
+        state: latest
+        update_cache: yes
+
+- hosts: docker
+  become: true
+  tasks:
+    - name: install docker
+      yum:
+        name: docker
+        state: latest
